@@ -369,6 +369,26 @@ body.unable-scrolling {
   opacity: 0.8;
   border-radius: 5px;
 }
+@media (max-width: 767px) {
+  .our-approach .content .left span {
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 17px;
+    background-color: #ac8c65;
+    cursor: pointer;
+    border: 1px solid #ac8c65;
+    margin-top: 30px;
+    transition: 0.5s;
+    opacity: 0.8;
+    border-radius: 5px;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .our-approach .content .left span:hover {
   opacity: 1;
 }
@@ -716,6 +736,7 @@ body.unable-scrolling {
   .show-Guid .guid-holder .left .button {
     width: 60%;
     margin: 25px 20%;
+    margin-top: 0;
   }
 }
 .show-Guid .guid-holder .right {
@@ -912,6 +933,13 @@ body.unable-scrolling {
 .Our-Testimonials .test-cards .card {
   background-color: #fff;
   padding: 20px;
+  border-radius: 4px;
+}
+.Our-Testimonials .test-cards .card{
+  display: none;
+}
+.Our-Testimonials .test-cards .card.one{
+  display: block;
 }
 @media (max-width: 767px) {
   .Our-Testimonials .test-cards .card {
@@ -935,6 +963,7 @@ body.unable-scrolling {
 }
 .Our-Testimonials .test-cards .card .identifcation img {
   width: 60px;
+  border-radius: 50%;
 }
 .Our-Testimonials .test-cards .card .identifcation .recomend {
   flex-basis: 100%;
@@ -958,12 +987,12 @@ body.unable-scrolling {
   margin-top: 30px;
 }
 .Our-Testimonials .circles li {
-  width: 10px;
-  height: 10px;
-  background-color: #000;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   margin: 0px 5px;
   background-color: rgb(172, 140, 101, 0.3);
+  cursor: pointer;
 }
 .Our-Testimonials .circles li.active {
   background-color: #ac8c65;
